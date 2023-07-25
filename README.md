@@ -1,2 +1,3 @@
 # DataAnalytics
-Learn data analytics using python 
+Learning data analytics using python 
+
