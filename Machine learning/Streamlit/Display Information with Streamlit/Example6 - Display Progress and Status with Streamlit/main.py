@@ -1,0 +1,24 @@
+# import neccessary library
+import streamlit as st
+import time
+
+with st.spinner("Counting on going..."):
+    progress_bar = st.progress(0)
+    for done in range(100):
+        time.sleep(0.1)
+        progress_bar.progress(done + 1)
+
+st.success("Counting complete.")
+st.balloons()
+
+st.markdown("### st.error()")
+st.error("Syntax error")
+
+st.markdown("### st.exception()")
+st.exception(ZeroDivisionError("Divide by zero error"))
+
+st.markdown("### st.warning()")
+st.warning("This will be deprecated soon")
+
+st.warning("### st.info()")
+st.info("App running optimally")
